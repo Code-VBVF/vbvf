@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //import { Spinner } from "reactstrap";
 import "../css/stream.scss";
 import { sanity } from "../util/index";
-import ConnectWidget from "../components/connect-widget";
+import ConnectWidget from "./connect-widget";
 
 export default function Stream(props) {
   //eslint-disable-next-line
