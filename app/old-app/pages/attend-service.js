@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "../css/attend-service.scss";
+import styles from "../styles/css/attend-service.css";
 import PortableText from "@sanity/block-content-to-react";
 import { sanity } from "../util/index";
 import { Spinner } from "reactstrap";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function AttendService() {
   const [pageData, setPageData] = useState();
   const [pageDataIsLoading, setPageDataIsLoading] = useState(true);

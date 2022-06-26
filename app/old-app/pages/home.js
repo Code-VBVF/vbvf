@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../css/home.scss";
+import styles from "../old-app/styles/css/home.css";
 import Button from "../components/button";
 import { Spinner } from "reactstrap";
 import {
@@ -9,10 +9,10 @@ import {
   sanity,
   sanityUrlFor,
 } from "../util/index";
-import BibleTeaching from "../images/home_page/bible-teaching.jpg";
-import DailyBread from "../images/home_page/daily_bread.jpeg";
-import MeetandGreet from "../images/home_page/MeetandGreet.jpg";
-import BaptismPhoto from "../images/home_page/anthony_baptism_horizontal_c.jpg";
+import BibleTeaching from "../old-app/images/home_page/bible-teaching.jpg";
+import DailyBread from "../old-app/images/home_page/daily_bread.jpeg";
+import MeetandGreet from "../old-app/images/home_page/MeetandGreet.jpg";
+import BaptismPhoto from "../old-app/images/home_page/anthony_baptism_horizontal_c.jpg";
 
 import Preview from "../components/preview";
 import AlertBubble from "../components/alert-bubble";
@@ -43,7 +43,11 @@ const liveStreamButtonText = () => {
   }
 };
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const Home = () => {
+  console.log("home is rendering");
   const query = `{'pageData': *[_type == "page" && title == "Home"]{
     paragraphs,
     scripture,

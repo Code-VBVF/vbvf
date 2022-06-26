@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Button from "./button";
-import { Link } from "react-router-dom";
-import "../css/connect-widget.scss";
+import { Link } from "@remix-run/react";
+import styles from "../styles/css/connect-widget.css";
 import { sanity } from "../util/index";
 import { Spinner } from "reactstrap";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function ConnectWidget() {
   const [kidsUnit, setKidsUnit] = useState("");
 

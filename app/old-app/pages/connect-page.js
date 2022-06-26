@@ -2,10 +2,13 @@ import React from "react";
 import Attendee from "../images/connect/attending_meeting.jpg";
 import iPhones from "../images/connect/Iphones.png";
 import ConnectionStep from "../components/connection-steps";
-import "../css/connect-page.scss";
+import styles from "../styles/css/connect-page.css";
 import Button from "../components/button";
 import { getMobileOperatingSystem } from "../util";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const ConnectPage = () => {
   const appStoreLink = () => {
     if (getMobileOperatingSystem() === "iOS") {

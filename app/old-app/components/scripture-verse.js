@@ -1,7 +1,10 @@
 import React from "react";
-import "../css/scripture-verse.scss";
+import styles from "../styles/css/scripture-verse.css";
 import PortableText from "@sanity/block-content-to-react";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function ScriptureVerse(props) {
   const serializers = {
     //this helps react understand how to present links

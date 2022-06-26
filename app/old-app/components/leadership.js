@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "../css/leadership.scss";
+import styles from "../styles/css/leadership.css";
 import { sanity, sanityUrlFor } from "../util/index";
 import PhotoTitle from "./photo-title";
 
 import AboutMenu from "./about-menu";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function Leadership() {
   const elderQuery = `*[_type == "person" && (role == "Elder" || role == "Senior Pastor")] | order(name asc)`;

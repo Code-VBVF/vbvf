@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { sanity, isOver } from "../util/index";
 import PortableText from "@sanity/block-content-to-react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "@remix-run/react";
 import { Spinner } from "reactstrap";
-import "../css/announcement.scss";
+import styles from "../styles/css/announcement.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function Announcement() {
   const serializers = {
     //this helps react understand how to present links

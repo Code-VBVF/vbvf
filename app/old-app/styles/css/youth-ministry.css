@@ -1,0 +1,96 @@
+.youth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.youth h1,
+.youth h2,
+.youth h3,
+.youth h4 {
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+.youth-header {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh 0 5vh 0;
+}
+.youth-header-logo {
+  position: relative;
+  width: 30%;
+  height: auto;
+  margin: 2vh;
+}
+.youth-description {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 10vh 0;
+}
+.youth-description-mission {
+  width: 60%;
+  padding: 1vh;
+}
+.youth-sign-up {
+  background-image: url(../images/youth_assets/orange_shape.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 10vh 0 10vh 0;
+  padding: 3vh 0 3vh 0;
+}
+.youth-sign-up img {
+  width: 35%;
+  border-radius: 25px;
+}
+.youth-leaders {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 5vh 0;
+}
+
+@media screen and (max-width: 800px) {
+  .youth-header {
+    margin: 5vh 0 0 0;
+  }
+  .youth-header-logo {
+    width: 50%;
+  }
+  .youth-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .youth-description p {
+    width: 90%;
+  }
+  .youth-sign-up {
+    background: none;
+    flex-direction: column;
+  }
+  .youth-sign-up div {
+    width: 80%;
+  }
+  .youth-sign-up img {
+    width: 100%;
+    border-radius: 0px;
+    margin: 0 0 2vh 0;
+  }
+}
+
+/*# sourceMappingURL=youth-ministry.css.map */

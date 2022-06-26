@@ -89,7 +89,7 @@ export function livestreamHappeningNow() {
 
     var today = new Date();
 
-    const isDstObserved = (today: Date) => {
+    const isDstObserved = (today) => {
       return today.getTimezoneOffset() < stdTimezoneOffset();
     };
 

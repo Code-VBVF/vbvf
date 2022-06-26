@@ -1,0 +1,39 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh auto auto auto;
+  text-align: center;
+}
+.not-found h1 {
+  font-weight: bolder;
+  font-size: 4em;
+}
+.not-found h3 {
+  width: 50%;
+}
+.not-found ul {
+  list-style: none;
+  padding: 0;
+}
+.not-found ul li {
+  margin: 2vh;
+}
+.not-found ul li a {
+  margin: 2vh;
+  text-decoration: none;
+  background: #66788d;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  border: 0;
+  transition: background 0.2s;
+}
+.not-found ul li a:hover {
+  background: #2e3c49;
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=not-found.css.map */

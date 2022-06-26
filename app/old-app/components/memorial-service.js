@@ -1,9 +1,12 @@
 import React from "react";
 
-import "../css/stream.scss";
-import "../css/memorial-service.scss";
+import styles from "../styles/css/stream.css";
+//import "../css/memorial-service.scss";
 import ConnectWidget from "./connect-widget";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function MemorialService(props) {
   return (
     <div className="stream">

@@ -1,12 +1,16 @@
 import React, { useState } from "react";
-import "../css/contact.scss";
+import styles from "../styles/css/contact.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const Contact = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   const icon = {
     hidden: {

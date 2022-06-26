@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-
-import "../css/childrens/childrens-content-aggregator.scss";
-import { Link } from "react-router-dom";
+import styles from "../styles/css/childrens-content-aggregator.css";
+import { Link } from "@remix-run/react";
 import { Card, CardTitle, CardSubtitle, CardImg } from "reactstrap";
 import { sanity, sanityUrlFor } from "../util/index";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function ChildrensContentAggregator() {
   const query = `*[_type == "childrensUnit"] | order(unitNumber asc) {
     unitNumber,

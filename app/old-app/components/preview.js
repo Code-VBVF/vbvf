@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "./button";
-import "../css/preview.scss";
+import styles from "../styles/css/preview.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function Preview(props) {
   return (
     <div className="preview">

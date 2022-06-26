@@ -1,0 +1,35 @@
+.faq-list {
+  margin: 5vh 0 0 0;
+}
+.faq-list h3 {
+  text-align: center;
+  font-size: 1.75em;
+}
+.faq-list.vertical {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 75%;
+}
+.faq-list.compact {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  gap: 50px;
+  grid-template-rows: 1fr;
+}
+.faq-list-item {
+  font-size: 0.7em;
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 900px) {
+  .faq-list.compact {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+}
+
+/*# sourceMappingURL=frequently-asked-questions.css.map */

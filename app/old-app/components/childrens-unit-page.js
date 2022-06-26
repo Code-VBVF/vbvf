@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Spinner } from "reactstrap";
 import smoothscroll from "smoothscroll-polyfill";
 import { sanity } from "../util/index";
-import { useParams } from "react-router-dom";
-import "../css/childrens/childrens-unit-page.scss";
-import { Link } from "react-router-dom";
+import { useParams } from "@remix-run/react";
+import styles from "../styles/css/childrens-unit-page.css";
+import { Link } from "@remix-run/react";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function ChildrensUnitPage() {
   let { unitId } = useParams();
   const [isLoading, setIsLoading] = useState(true);

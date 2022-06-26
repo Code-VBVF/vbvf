@@ -1,7 +1,10 @@
 import React from "react";
 import PortableText from "@sanity/block-content-to-react";
-import "../css/frequently-asked-questions.scss";
+import styles from "../styles/css/frequently-asked-questions.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function FrequentlyAskedQuestions(props) {
   const serializers = {
     //this helps react understand how to present links

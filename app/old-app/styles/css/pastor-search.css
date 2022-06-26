@@ -1,0 +1,88 @@
+.pastor-search img {
+  width: 100%;
+}
+.pastor-search .hidden {
+  display: none;
+}
+.pastor-search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5vh;
+}
+.pastor-search-menu {
+  display: flex;
+  min-width: 30%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-right: #4f5957 2px solid;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+.pastor-search-menu ul {
+  list-style: none;
+  margin: 3vh;
+}
+.pastor-search-menu ul li {
+  margin: 15px 0 15px 0;
+  padding: 3px;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Open Sans";
+  cursor: pointer;
+}
+.pastor-search-menu ul .selected {
+  color: #e8b021;
+  border: 2px solid #e8b021;
+  border-radius: 2px;
+}
+.pastor-search-content {
+  max-width: 50%;
+  min-width: 400px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pastor-search-content h1 {
+  align-self: center;
+  text-align: center;
+  margin: 3vh;
+}
+.pastor-search-content-prayer {
+  margin: 2vh;
+}
+.pastor-search-content-prayer h4 {
+  text-align: center;
+  font-size: 1.5em;
+}
+.pastor-search-content a {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .pastor-search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pastor-search-menu {
+    width: 100%;
+    border: none;
+    font-size: 0.7em;
+  }
+  .pastor-search-content {
+    width: 90%;
+    margin: 0;
+    align-items: center;
+  }
+  .pastor-search-content h1 {
+    margin: 0 0 3vh 0;
+  }
+  .pastor-search-content ul li {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=pastor-search.css.map */

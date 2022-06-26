@@ -1,8 +1,11 @@
 import React from "react";
-import "../css/beliefs.scss";
-// import { Link } from "react-router-dom";
+import "../styles/css/beliefs.css";
+// import { Link } from "@remix-run/react";
 import AboutMenu from "./about-menu";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function Beliefs() {
   return (
     <div className="beliefs-values">

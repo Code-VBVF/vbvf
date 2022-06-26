@@ -1,14 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { getVideos, isOver, livestreamHappeningNow } from "../util/index";
-import { Link } from "react-router-dom";
+import { Link } from "@remix-run/react";
 import { Spinner } from "reactstrap";
 import Stream from "../components/stream";
 import { sanity } from "../util/index";
-import "../css/livestream.scss";
+import styles from "../styles/css/livestream.css";
 import MemorialService from "../components/memorial-service";
+import { LinksFunction } from "@remix-run/node";
 
 var sortBy = require("lodash.sortby");
 
+export function links() {
+  return [
+    {
+      rel: "stylesheet",
+      href: styles,
+    },
+  ];
+}
 export default function Livestream() {
   const [wednesdaySeries, setWednesdaySeries] = useState({});
   const [sundaySeries, setSundaySeries] = useState({});

@@ -1,0 +1,34 @@
+.attend {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attend h1 {
+  margin: 1vh;
+  font-weight: 900;
+  text-align: center;
+  color: #2e3c49;
+}
+.attend #highlight {
+  color: goldenrod;
+}
+.attend-desc {
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  gap: 5vw;
+  grid-template-rows: 1fr;
+  margin: 5vh;
+}
+
+@media screen and (max-width: 975px) {
+  .attend-desc {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+  }
+}
+
+/*# sourceMappingURL=attend-service.css.map */

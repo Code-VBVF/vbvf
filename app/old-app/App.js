@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/App.css";
+import styles from "./styles/css/App.css";
 import { Routes, Route } from "react-router-dom";
 
 import Footer from "./components/footer";
@@ -12,7 +12,7 @@ import GivingRedirect from "./pages/giving-redirect";
 import PrivacyPolicy from "./components/privacy-policy";
 import TermsConditions from "./components/terms-conditions";
 import NotFound from "./pages/notfound";
-import Home from "./pages/home";
+// import Home from "../routes/home";
 import GlobalNav from "./components/global-nav";
 import ChildrensMinistry from "./pages/childrens-ministry";
 import YouthMinistry from "./pages/youth-ministry";
@@ -35,14 +35,17 @@ import CareMinistry from "./pages/care-ministry";
 import WhatsHappening from "./pages/whats-happening";
 
 // import OnlineMinistry from "./pages/online-ministry";
-
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 function App() {
+  console.log("app is rendering");
   return (
     <div className="page-container">
       <ScrollToTop />
       <GlobalNav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/connect" element={<ConnectPage />} />
         <Route path="/about/faq" element={<FAQ />} />
         <Route path="/about/leadership" element={<Leadership />} />

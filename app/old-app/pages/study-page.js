@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Spinner } from "reactstrap";
 import { sanity, isOver, sanityUrlFor } from "../util/index";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "@remix-run/react";
 
 import LessonBlock from "../components/lesson-block";
 
-import "../css/study-page.scss";
+import styles from "../styles/css/study-page.css";
 import VbvmiStudy from "../components/vbvmiStudy";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function StudyPage() {
   let { studyName } = useParams();

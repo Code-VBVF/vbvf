@@ -1,0 +1,175 @@
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh;
+  scroll-behavior: smooth;
+}
+.unit a {
+  margin: 1vh;
+}
+.unit-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unit-content-assets {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.unit-content-assets-title {
+  text-align: left;
+  font-weight: 700;
+  margin-top: 2vh;
+}
+.unit-content-video {
+  width: 90%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.unit-content-video iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.unit-content h5 {
+  text-align: center;
+  margin: 1vh;
+}
+.unit .loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unit-lesson-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unit-lesson-list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vh;
+  border-top: 2px solid rgba(46, 60, 73, 0.4);
+  text-align: center;
+}
+.unit-lesson-list-item h4.mobile-title {
+  display: none;
+}
+.unit-lesson-list-item button.mobile-play-button {
+  display: none;
+}
+.unit-lesson-list-item button.play-button {
+  background: #66788d;
+  border: none;
+  border-radius: 25px;
+  padding: 1vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-property: transform;
+  transition: ease 0.2s;
+  transform: translate(0px, 0px);
+}
+.unit-lesson-list-item button.play-button:hover {
+  transition: ease 0.2s;
+  transform: translate(0px, -5px);
+}
+.unit-lesson-list-item h3 {
+  width: 20%;
+}
+.unit-lesson-list-item h3 span {
+  font-size: 0.7em;
+  display: block;
+}
+.unit-lesson-list-item-worksheets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.unit-lesson-list-item-worksheets button {
+  margin: 2vh;
+  text-decoration: none;
+  background: #66788d;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  border: 0;
+  transition: background 0.2s;
+}
+.unit-lesson-list-item-worksheets button:hover {
+  background: #2e3c49;
+  text-decoration: none;
+  color: white;
+}
+.unit-lesson-list .active {
+  background: #dbcca5;
+}
+
+@media screen and (max-width: 800px) {
+  .unit {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+  }
+  .unit-description {
+    width: 90%;
+  }
+  .unit-description-title {
+    text-align: center;
+    font-weight: 700;
+  }
+  .unit-lesson-list {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .unit-lesson-list-item {
+    flex-direction: row;
+    flex-direction: row;
+  }
+  .unit-lesson-list-item h3.desktop-title {
+    display: none;
+  }
+  .unit-lesson-list-item button.play-button {
+    display: none;
+  }
+  .unit-lesson-list-item button.mobile-play-button {
+    display: block;
+    width: 100%;
+    background: #66788d;
+    border: none;
+    border-radius: 25px;
+    padding: 1vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-property: transform;
+    transition: ease 0.2s;
+    transform: translate(0px, 0px);
+    color: white;
+  }
+  .unit-lesson-list-item button.mobile-play-button:hover {
+    transition: ease 0.2s;
+    transform: translate(0px, -5px);
+  }
+  .unit-lesson-list-item h5 {
+    display: none;
+  }
+  .unit-lesson-list-item-worksheets {
+    display: block;
+  }
+  .unit-lesson-list-item-worksheets button {
+    margin: 1vh;
+  }
+}
+
+/*# sourceMappingURL=childrens-unit-page.css.map */

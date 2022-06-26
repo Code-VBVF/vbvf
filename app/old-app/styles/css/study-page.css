@@ -1,0 +1,113 @@
+.study-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 3vh 0 0 0;
+}
+.study-container .back-link {
+  align-self: flex-start;
+  margin: 2vh;
+  color: #e8b021;
+  display: flex;
+  align-items: center;
+}
+.study-container .back-link svg {
+  height: 1em;
+  margin-right: 0.5em;
+}
+.study-container .study-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3vh 0 0;
+}
+.study-container .study-info img {
+  width: 100%;
+}
+.study-container .study-info-title {
+  text-align: center;
+  font-weight: 700;
+}
+.study-container .study-info-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+  text-align: center;
+  margin: 2vh;
+}
+.study-container .study-info-details div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.study-container .study-info-details-lessons {
+  margin: 0;
+}
+.study-container .study-info-details-lessons h3 {
+  font-size: 2.5em;
+}
+.study-container .study-info-details p {
+  font-size: 1em;
+}
+.study-container .study-info .supporting-text {
+  font-size: 0.9em;
+  color: grey;
+  margin: 0;
+  padding: 0;
+}
+.study-container .study-info .teacher-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  text-align: center;
+}
+.study-container .study-info .teacher-container-photo {
+  position: relative;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.study-container .study-info .teacher-container img {
+  width: 100%;
+  height: auto;
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: none !important;
+}
+.study-container .study-info-body-ministry-link {
+  text-align: center;
+}
+.study-container .study-info-body-ministry-link p {
+  color: #2e3c49;
+}
+.study-container .lesson-list {
+  width: 40%;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .study-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .study-container .study-info {
+    width: 90%;
+    align-items: center;
+    margin: 0;
+  }
+  .study-container .study-info-title {
+    text-align: center;
+    font-weight: 700;
+  }
+  .study-container .lesson-list {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=study-page.css.map */

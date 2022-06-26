@@ -1,0 +1,43 @@
+.staff-info-container {
+  max-width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.staff-info-container .staff-card {
+  max-width: 30%;
+}
+.staff-info-container .staff-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+}
+.staff-info-container .staff-info h2 {
+  text-align: center;
+  mix-blend-mode: normal;
+}
+.staff-info-container .staff-info p {
+  color: black;
+  max-width: 90%;
+  margin: 20px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+  .staff-info-container {
+    margin: 3vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  .staff-info-container .staff-card {
+    min-width: 100%;
+  }
+  .staff-info-container .staff-info {
+    margin-top: 20px;
+    min-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=staff-info.css.map */

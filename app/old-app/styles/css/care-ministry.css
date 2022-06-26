@@ -1,0 +1,80 @@
+.care-ministries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.care-ministries h1 {
+  margin: 5vh 0 2vh 0;
+}
+.care-ministries iframe {
+  margin: 3vh;
+}
+.care-ministries-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 3vh;
+  max-width: 1200px;
+}
+.care-ministries-row span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 40%;
+}
+.care-ministries-row-vision {
+  width: 40%;
+}
+
+.contact-container {
+  width: 100%;
+  margin: 5vh;
+  padding: 2vh;
+  display: flex;
+  flex-direction: row;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container h3 {
+  padding: 3vh;
+  width: 60%;
+}
+
+.close-button {
+  align-self: flex-end;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .care-ministries iframe {
+    width: 100%;
+  }
+  .care-ministries-row {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 0;
+  }
+  .care-ministries-row span {
+    width: 98%;
+  }
+  .care-ministries-row-vision {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .care-ministries .contact-container {
+    flex-direction: column;
+  }
+  .care-ministries .contact-container h3 {
+    width: 98%;
+  }
+}
+
+/*# sourceMappingURL=care-ministry.css.map */

@@ -1,9 +1,13 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import React, { useState } from "react";
-import "../css/care-ministry-form.scss";
+import styles from "../styles/css/care-ministry-form.css";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 import Button from "./button";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function CareMinistryForm({ closeFunc }) {
   const icon = {

@@ -1,0 +1,73 @@
+.studies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.studies-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh;
+}
+.studies-desc h1 {
+  text-align: center;
+}
+.studies-desc p {
+  width: 75%;
+}
+.studies-array {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.studies-array .study-link {
+  will-change: transform;
+  transition: 0.1s ease;
+  text-decoration: none;
+}
+.studies-array .study-link:hover {
+  transform: scale(1.01);
+}
+.studies-array .study-link:hover h3 {
+  font-weight: 900;
+  color: #e8b021;
+}
+.studies-array .study-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  color: black;
+}
+.studies-array .study-icon h3 {
+  white-space: nowrap;
+}
+.studies .indicator-hidden {
+  visibility: hidden;
+  margin: 5px;
+}
+.studies .indicator-active {
+  content: "Active Series";
+  color: #e8b021;
+  border-bottom: 2px #e8b021 solid;
+  text-align: center;
+  width: 75%;
+  margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .studies-desc {
+    margin: 0;
+  }
+  .studies-desc p {
+    width: 90%;
+  }
+  .study-icon img {
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=study-aggregator.css.map */

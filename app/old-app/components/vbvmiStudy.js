@@ -1,8 +1,11 @@
 import React from "react";
 import Button from "./button";
 import { sanityUrlFor } from "../util/index";
+import styles from "../styles/css/vbvmiStudy.css";
 
-import "../css/vbvmiStudy.scss";
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function VbvmiStudy(props) {
   return (

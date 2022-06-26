@@ -1,0 +1,82 @@
+.announcements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+.announcements h5 {
+  color: gray;
+}
+.announcements h1,
+.announcements h5 {
+  text-align: center;
+}
+.announcements-video {
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.announcements-video iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.announcements-text {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 65%;
+}
+.announcements-service-times {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.announcements-service-times h2 {
+  text-align: center;
+  margin: 10vh 0 -2vh 0;
+}
+.announcements-service-times-info {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+}
+.announcements-service-times-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5vh;
+}
+.announcements-service-times-info div h3 {
+  text-align: center;
+}
+.announcements-faq h2 {
+  margin: 5vh 0 -2vh 0;
+}
+
+@media screen and (max-width: 600px) {
+  .announcements h2 {
+    font-size: 1em;
+  }
+  .announcements-video {
+    width: 95%;
+  }
+  .announcements-text {
+    width: 95%;
+  }
+  .announcements-service-times-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .announcements-faq {
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=whats-happening.css.map */

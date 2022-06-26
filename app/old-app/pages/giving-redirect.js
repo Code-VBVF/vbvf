@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import "../css/sermon-redirect.scss";
+import styles from "../styles/css/sermon-redirect.css";
 import VbvfLogo from "../images/logos/vbvf_logo_full.png";
 import GivingLogo from "../images/logos/giving_logo.png";
 import Arrow from "../images/arrow-thick-right.svg";
 import Button from "../components/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@remix-run/react";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const GivingRedirect = (props) => {
   const [counter, setCounter] = useState("10");
 

@@ -1,0 +1,39 @@
+.study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh 0 0 0;
+}
+.study span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
+.study span img {
+  border-radius: 5px;
+  width: 50%;
+  min-width: 50%;
+}
+.study span h1 {
+  margin: 3vh;
+  text-align: center;
+}
+.study p {
+  margin: 5px;
+  width: 65%;
+}
+
+@media screen and (max-width: 800px) {
+  .study span {
+    flex-direction: column-reverse;
+  }
+  .study span img {
+    width: 80%;
+  }
+  .study p {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=vbvmiStudy.css.map */

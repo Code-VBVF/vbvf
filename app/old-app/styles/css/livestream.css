@@ -1,0 +1,27 @@
+.livestream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.livestream-archive {
+  width: 85%;
+  align-self: center;
+}
+.livestream-archive h3 {
+  margin: 5vh 0 1vh 0;
+}
+.livestream-archive-video-player {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.livestream-archive-video-player iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=livestream.css.map */

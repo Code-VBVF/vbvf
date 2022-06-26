@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../css/terms-privacy.css";
+import { Link } from "@remix-run/react";
+import styles from "../styles/css/terms-privacy.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const PrivacyPolicy = () => {
   return (
     <div className="disclosures">

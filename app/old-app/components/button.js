@@ -1,6 +1,9 @@
 import React from "react";
-import "../css/button.scss";
+import styles from "../styles/css/button.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const Button = (props) => {
   const size = () => {
     return props.size === "small"

@@ -1,0 +1,20 @@
+.announcement {
+  display: grid;
+  place-items: center;
+  margin-top: 5vh;
+}
+.announcement-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+}
+.announcement-text h1,
+.announcement-text h6 {
+  text-align: center;
+}
+.announcement-text div {
+  width: 90%;
+}
+
+/*# sourceMappingURL=announcement.css.map */

@@ -1,6 +1,9 @@
 import React from "react";
-import "../css/photo-title.scss";
+import styles from "../styles/css/photo-title.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function PhotoTitle(props) {
   return (
     <div className="person">

@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../css/not-found.scss";
+import { Link } from "@remix-run/react";
+import styles from "../styles/css/not-found.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const NotFound = () => {
   return (
     <div className="not-found">

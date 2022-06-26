@@ -1,10 +1,12 @@
 import React from "react";
 import FacebookLogo from "../images/logos/facebook_logo.png";
 import InstagramLogo from "../images/logos/instagram_logo.png";
-import "../css/footer.scss";
+import styles from "../styles/css/footer.css";
+import { Link, useLocation } from "@remix-run/react";
 
-import { Link, useLocation } from "react-router-dom";
-
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const Footer = () => {
   return (
     <div className="footer">

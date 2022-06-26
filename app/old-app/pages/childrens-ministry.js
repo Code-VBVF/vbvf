@@ -3,14 +3,16 @@ import PortableText from "@sanity/block-content-to-react";
 import { Spinner } from "reactstrap";
 import JourneyLogo from "../images/logos/journey-logo.png";
 import SofiJonBTS from "../images/childrens_ministry/sofi_jon_bts.jpg";
-import "../css/childrens/childrens-ministry.scss";
+import styles from "../styles/css/childrens-ministry.css";
 import ScriptureVerse from "../components/scripture-verse";
 import Button from "../components/button";
-
 import StaffInfo from "../components/staff-info";
-
 import { sanity, sanityUrlFor } from "../util/index";
 import AlertBubble from "../components/alert-bubble";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function ChildrensMinistry() {
   const query = `*[_type == "page" && title == "Children's Ministry"]{

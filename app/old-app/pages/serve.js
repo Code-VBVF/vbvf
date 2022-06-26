@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../css/serve.scss";
+import styles from "../styles/css/serve.css";
 import Ben from "../images/serve/ben_coffee.jpg";
 import Cathy from "../images/serve/cathy_greeting.jpg";
 import KidsMinistry from "../images/serve/kids_ministry.jpg";
@@ -11,6 +11,9 @@ import ScriptureVerse from "../components/scripture-verse";
 import Button from "../components/button";
 import { Spinner } from "reactstrap";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function Serve() {
   const query = `*[_type == "page" && title == "Serve"]{
     paragraphs,

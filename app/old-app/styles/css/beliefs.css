@@ -1,0 +1,40 @@
+.beliefs-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beliefs-values-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+}
+.beliefs-values-text h2 {
+  color: #2e3c49;
+}
+.beliefs-values-text h3 {
+  color: #66788d;
+}
+.beliefs-values-text p {
+  width: 60%;
+}
+.beliefs-values .scripture {
+  font-weight: 400;
+  text-decoration: none;
+  color: #4f5957;
+}
+.beliefs-values .learn-more-link {
+  display: block;
+  margin: 2vh 0 3vh 0;
+}
+@media screen and (max-width: 600px) {
+  .beliefs-values .beliefs-values-text {
+    width: 90%;
+  }
+  .beliefs-values .beliefs-values-text p {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=beliefs.css.map */

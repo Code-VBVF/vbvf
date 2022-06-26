@@ -1,7 +1,10 @@
 import React from "react";
 import AboutMenu from "./about-menu";
-import "../css/our-story.scss";
+import styles from "../styles/css/our-story.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function OurStory() {
   return (
     <div className="our-story">

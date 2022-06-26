@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import "../css/lesson-block.scss";
+import styles from "../styles/css/lesson-block.css";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import Button from "./button";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function LessonBlock(props) {
   const [modal, setModal] = useState(false);

@@ -16,11 +16,15 @@ import {
   ModalBody,
   ModalFooter,
 } from "reactstrap";
-import { Link } from "react-router-dom";
-import "../css/global-nav.scss";
+import { Link } from "@remix-run/react";
+import styles from "../styles/css/global-nav.css";
 import VBVFLogo from "../images/logos/vbvf_logo.png";
 import { getMobileOperatingSystem } from "../util/index";
 import Button from "./button";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 const GlobalNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);

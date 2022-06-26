@@ -3,11 +3,13 @@ import { sanity } from "../util/index";
 import PortableText from "@sanity/block-content-to-react";
 import { format } from "date-fns";
 import { Spinner } from "reactstrap";
-import "../css/whats-happening.scss";
-
+import styles from "../styles/css/whats-happening.css";
 import FrequentlyAskedQuestions from "../components/frequently-asked-questions";
 import UpcomingEvents from "../components/upcoming-events";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function WhatsHappening() {
   const [announcement, setAnnouncement] = useState();
   const [noAnnouncement, setNoAnnouncement] = useState(false);

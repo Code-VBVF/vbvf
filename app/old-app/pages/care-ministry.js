@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { sanity } from "../util/index";
-import "../css/care-ministry.scss";
+import styles from "../styles/css/care-ministry.css";
 import FrequentlyAskedQuestions from "../components/frequently-asked-questions";
 import ScriptureVerse from "../components/scripture-verse";
 import { Spinner } from "reactstrap";
@@ -10,6 +10,9 @@ import { DialogOverlay, DialogContent } from "@reach/dialog";
 import "@reach/dialog/styles.css";
 import Button from "../components/button";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function CareMinistry() {
   const [pageData, setPageData] = useState();
 

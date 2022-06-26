@@ -1,5 +1,9 @@
 import React from "react";
-import "../css/terms-privacy.css";
+import styles from "../styles/css/terms-privacy.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 const TermsConditions = () => {
   return (

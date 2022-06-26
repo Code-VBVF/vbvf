@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { sanity } from "../util/index";
-import { Link, useLocation } from "react-router-dom";
-import "../css/alert-bubble.scss";
+import { Link, useLocation } from "@remix-run/react";
+import "../styles/css/alert-bubble.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function AlertBubble() {
   const [announcement, setAnnouncement] = useState();
   let page = useLocation();

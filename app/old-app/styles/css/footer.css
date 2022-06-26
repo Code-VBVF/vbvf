@@ -1,0 +1,49 @@
+.footer {
+  z-index: 1;
+  position: static;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20vh;
+  padding-top: 5vh;
+}
+.footer a {
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  margin: 5px;
+}
+.footer-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons img {
+  margin: 10px;
+  height: 40px;
+  width: auto;
+}
+.footer-disclosures {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.footer-copyright {
+  color: black;
+  font-size: 0.75em;
+}
+.footer #sanity-link {
+  margin: 5px;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,7 +1,10 @@
 import React from "react";
 import StaffCard from "./staff-card";
-import "../css/staff-info.scss";
+import styles from "../styles/css/staff-info.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function StaffInfo(props) {
   return (
     <div className="staff-info-container">

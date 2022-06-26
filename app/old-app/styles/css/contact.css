@@ -1,0 +1,119 @@
+.contact {
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-text-field {
+  width: 30%;
+  margin: 1vh;
+  border: 1px solid #2e3c49;
+  border-radius: 5px;
+}
+.contact-checkbox-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.contact-checkbox-group label {
+  margin: 1vh;
+}
+.contact-checkbox-group label input {
+  margin: 5px;
+}
+.contact-error-message {
+  color: #e8b021;
+  display: block;
+  margin: -5px 0 2vh 0;
+}
+.contact button {
+  margin: 2vh;
+  text-decoration: none;
+  background: #66788d;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  border: 0;
+  transition: background 0.2s;
+}
+.contact button:hover {
+  background: #2e3c49;
+  text-decoration: none;
+  color: white;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 0 0 0;
+}
+.contact-info .highlight {
+  color: #e8b021;
+}
+.contact-info-block-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1vh 0 0 0;
+}
+.contact-info-block {
+  width: 33%;
+  margin: 5px;
+  text-align: center;
+}
+.contact-submitted {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact-submitted-check-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  margin: 3vh auto 3vh auto;
+  background: #4f5957;
+  place-content: center;
+  border-radius: 30px;
+}
+.contact-submitted-check-container-item {
+  width: 56%;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+@media screen and (max-width: 800px) {
+  .contact h3 {
+    font-size: 1.2em;
+  }
+  .contact-text-field {
+    width: 80%;
+  }
+  .contact-text-area {
+    width: 80%;
+  }
+  .contact-info {
+    text-align: center;
+    width: 80%;
+  }
+  .contact-info-block-group {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 0 0;
+  }
+  .contact-info-block {
+    width: 60%;
+    margin: 5px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

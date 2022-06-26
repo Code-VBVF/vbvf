@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LogosLogo from "../images/logos/logos-logo.png";
 import Volunteer from "../images/youth_assets/volunteer_youth.jpg";
-import "../css/youth-ministry.scss";
+import styles from "../styles/css/youth-ministry.css";
 import { sanity, sanityUrlFor } from "../util/index";
 import PortableText from "@sanity/block-content-to-react";
 import ScriptureVerse from "../components/scripture-verse";
@@ -11,6 +11,9 @@ import Spinner from "reactstrap/lib/Spinner";
 import FrequentlyAskedQuestions from "../components/frequently-asked-questions";
 import AlertBubble from "../components/alert-bubble";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function YouthMinistry() {
   const query = `*[_type == "page" && title == "Youth Ministry"]{
     paragraphs,

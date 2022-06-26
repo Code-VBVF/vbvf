@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "../css/study-aggregator.scss";
-import { Link } from "react-router-dom";
+import styles from "../styles/css/study-aggregator.css";
+import { Link } from "@remix-run/react";
 import { sanity, sanityUrlFor, isOver } from "../util/index";
 import AlertBubble from "../components/alert-bubble";
 import { Spinner } from "reactstrap";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function StudyAggregator() {
   const query = `*[_type == "series" && !isVbvmiStudy] | order(endDate desc) {
     title,

@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Spinner } from "reactstrap";
 import FrequentlyAskedQuestions from "./frequently-asked-questions";
 import { sanity } from "../util/index";
-import "../css/faq.scss";
+import styles from "../styles/css/faq.css";
 import AboutMenu from "./about-menu";
 import AlertBubble from "./alert-bubble";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function FAQ() {
   const query = `*[_type == "page" && title == "About Page"]{...}`;
 

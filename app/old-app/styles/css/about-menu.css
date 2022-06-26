@@ -1,0 +1,29 @@
+.about-menu {
+  margin: 5vh;
+  border-bottom: 1px solid #2e3c49;
+}
+.about-menu a {
+  color: #2e3c49;
+  text-align: center;
+  margin: 2vh;
+  padding: 3px;
+}
+.about-menu a:hover {
+  color: #4f5957;
+}
+.about-menu .active {
+  border: 2px solid #e8b021;
+  border-radius: 5px;
+  color: #e8b021;
+}
+@media screen and (max-width: 600px) {
+  .about-menu {
+    display: flex;
+  }
+  .about-menu a {
+    margin: 2vh 0 0 0;
+    flex-basis: 50%;
+  }
+}
+
+/*# sourceMappingURL=about-menu.css.map */

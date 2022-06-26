@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "../css/small-groups.scss";
+import styles from "../styles/css/small-groups.css";
 
 import StaffInfo from "../components/staff-info";
 import Logo from "../images/logos/small_group_logo.svg";
@@ -12,6 +12,10 @@ import AlertBubble from "../components/alert-bubble";
 import { sanity, sanityUrlFor } from "../util/index";
 import { Spinner } from "reactstrap";
 import FrequentlyAskedQuestions from "../components/frequently-asked-questions";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function SmallGroups() {
   const query = `*[_type == "page" && title == "Small Groups"]{

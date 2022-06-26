@@ -1,0 +1,60 @@
+.button {
+  text-decoration: none;
+  border-radius: 5px;
+  border: 0;
+  transition: background 0.2s;
+  margin: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.button.sm {
+  padding: 5px 10px 5px 10px;
+}
+.button.md {
+  padding: 10px 20px 10px 20px;
+}
+.button.lg {
+  padding: 15px 30px 15px 30px;
+}
+
+.bone {
+  background: #eae9e8;
+  border: solid 2px #eae9e8;
+  color: #2e3c49;
+}
+.bone:hover {
+  background: transparent;
+  color: #eae9e8;
+}
+
+.green {
+  background: #4f5957;
+  border: solid 2px #4f5957;
+  color: #eae9e8;
+}
+.green:hover {
+  background: transparent;
+  color: #4f5957;
+}
+
+.red {
+  background: #cc2e23;
+  border: solid 2px #cc2e23;
+  color: #eae9e8;
+}
+.red:hover {
+  background: transparent;
+  color: #cc2e23;
+}
+
+.gold {
+  background: #e8b021;
+  border: solid 2px #e8b021;
+  color: #2e3c49;
+}
+.gold:hover {
+  background: transparent;
+  color: #2e3c49;
+}
+
+/*# sourceMappingURL=button.css.map */

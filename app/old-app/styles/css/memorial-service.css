@@ -1,0 +1,13 @@
+.memorial-info h2,
+.memorial-info h3 {
+  margin-top: 2vh;
+}
+.memorial-info li {
+  margin-bottom: 2vh;
+}
+.memorial-info #streaming-difficulties {
+  display: block;
+  margin-bottom: 2vh;
+}
+
+/*# sourceMappingURL=memorial-service.css.map */

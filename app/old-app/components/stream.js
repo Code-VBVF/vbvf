@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../css/stream.scss";
-
+import { Link } from "@remix-run/react";
+import styles from "../styles/css/stream.css";
 import ConnectWidget from "./connect-widget";
 import Button from "./button";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function Stream(props) {
   return (
     <div className="stream">

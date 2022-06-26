@@ -1,0 +1,100 @@
+.lesson-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh;
+  background: rgb(236, 236, 236);
+}
+.lesson-block-title {
+  text-align: left;
+  margin-left: 2vh;
+}
+.lesson-block-title-lesson {
+  font-size: 1.4em;
+}
+.lesson-block-title-verses {
+  font-size: 1em;
+  opacity: 0.7;
+}
+.lesson-block-icons {
+  width: 65%;
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(4, 6vw);
+}
+.lesson-block-icons-image {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.75em;
+}
+.lesson-block-icons-image svg {
+  padding: 1px;
+  height: 30px;
+  width: 30px;
+}
+
+.lesson-block:nth-child(even) {
+  background: rgb(245, 245, 241);
+}
+
+.lesson-modal {
+  display: flex;
+  flex-direction: column;
+}
+.lesson-modal-video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.lesson-modal-video iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.lesson-modal-button {
+  align-self: center;
+  margin: 2vh auto 0 auto;
+}
+.lesson-modal-button .doc-icon {
+  fill: white;
+  height: 3vh;
+  margin: 1vh;
+}
+
+@media screen and (max-width: 600px) {
+  .lesson-block {
+    flex-direction: column;
+    padding: 3vh;
+  }
+  .lesson-block-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1vh;
+  }
+  .lesson-block-title h4 {
+    display: inline;
+  }
+  .lesson-block-title h5 {
+    display: inline;
+  }
+  .lesson-block-icons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1vh;
+  }
+}
+
+/*# sourceMappingURL=lesson-block.css.map */

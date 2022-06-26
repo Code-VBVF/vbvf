@@ -1,0 +1,34 @@
+.connect-widget {
+  align-self: flex-start;
+  margin: 3vh;
+}
+.connect-widget ul {
+  width: 100%;
+}
+.connect-widget-button-container {
+  display: flex;
+  flex-direction: column;
+}
+.connect-widget h5 {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .connect-widget {
+    align-self: center;
+    text-align: center;
+  }
+  .connect-widget ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+  .connect-widget ul li {
+    margin: 5px;
+  }
+  .connect-widget h5 {
+    align-self: flex-start;
+    font-size: 1.7em;
+  }
+}
+
+/*# sourceMappingURL=connect-widget.css.map */

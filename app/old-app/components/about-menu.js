@@ -1,8 +1,11 @@
 import React from "react";
 import { Nav } from "reactstrap";
-import { NavLink } from "react-router-dom";
-import "../css/about-menu.scss";
+import { NavLink } from "@remix-run/react";
+import styles from "../styles/css/about-menu.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 const AboutMenu = () => {
   return (
     <div className="about-menu">

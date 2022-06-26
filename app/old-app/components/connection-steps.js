@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "./button";
-import "../css/connection-steps.scss";
+import styles from "../styles/css/connection-steps.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function ConnectionStep(props) {
   return (
     <div className="step-container">

@@ -1,0 +1,186 @@
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .main-header {
+  width: 100%;
+  background: url(../images/home_page/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 85vh;
+}
+.home .main-header-titles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #eae9e8;
+  margin-top: 30vh;
+}
+.home .main-header-titles h1 {
+  color: #eae9e8;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.home .main-header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3vh;
+  text-decoration: underline;
+}
+.home .main-header-buttons a {
+  color: #eae9e8;
+}
+.home .preview-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0 20px 0;
+}
+.home .childrens-content {
+  background-image: url(../images/childrens_ministry/Intersect.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.home .childrens-content h3 {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+.home .childrens-content-preview {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home #celebration-of-life {
+  color: #2e3c49;
+  margin: auto 0 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+}
+.home #celebration-of-life div {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.home #celebration-of-life h3 {
+  text-align: center;
+}
+.home #celebration-of-life span {
+  font-family: "Volkhov", sans-serif;
+  font-size: 1em;
+}
+.home .series-promo {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .series-promo-desc {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 5vh;
+}
+.home .series-promo-desc h2,
+.home .series-promo-desc h3 {
+  text-align: center;
+}
+.home .series-promo img {
+  justify-self: flex-end;
+  width: 70%;
+}
+
+@media screen and (max-width: 800px) {
+  .home .main-header {
+    display: flex;
+    flex-direction: column;
+    background-position: 30% 15%;
+    background-size: cover;
+    align-items: center;
+    max-height: 50vh;
+  }
+  .home .main-header-titles {
+    width: 100%;
+    margin: 23vh 0 20vh 0;
+    max-width: 100%;
+    color: #eae9e8;
+  }
+  .home .main-header h1 {
+    font-size: 3rem;
+    color: #eae9e8;
+  }
+  .home .main-header-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .main-header-buttons a {
+    color: #eae9e8;
+  }
+  .home .preview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .childrens-content-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home #celebration-of-life {
+    flex-direction: column;
+    place-items: center;
+  }
+  .home #preaching-word-image {
+    width: 95%;
+  }
+  .home #connection-meeting {
+    flex-direction: column-reverse;
+  }
+  .home #samuel-series {
+    flex-direction: column;
+  }
+  .home #samuel-series img {
+    -webkit-mask-image: linear-gradient(to top, transparent 0, black 75%);
+    mask-image: linear-gradient(to top, transparent 0, black 75%);
+  }
+  .home .series-promo {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    padding-bottom: 2vh;
+  }
+  .home .series-promo-desc {
+    width: 90%;
+  }
+  .home .series-promo img {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

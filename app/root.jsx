@@ -1,6 +1,7 @@
 import { Outlet } from "@remix-run/react";
 
 export default function Root() {
+  console.log("rendering the root");
   return (
     <html lang="en">
       <head>
@@ -28,7 +29,7 @@ export default function Root() {
       </head>
       <body>
         {/* A little help for the Netlify bots if you're not using a SSG */}
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        {/* <form name="contact" netlify netlify-honeypot="bot-field" hidden>
           <input type="text" name="firstName" />
           <input type="text" name="lastName" />
           <input type="tel" name="phoneNumber" />
@@ -37,7 +38,6 @@ export default function Root() {
           <input type="checkbox" name="contactOptions" />
           <textarea name="message"></textarea>
         </form>
-
         <form
           name="care-ministry-contact"
           netlify
@@ -51,7 +51,7 @@ export default function Root() {
           <input type="checkbox" name="haveReceivedPriorCounseling" />
           <input type="text" name="counselor" />
           <input type="checkbox" name="contactPermission" />
-        </form>
+        </form> */}
         <div id="root">
           <Outlet />
         </div>
