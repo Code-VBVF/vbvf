@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "./button";
-import styles from "../styles/css/preview.css";
+import PreviewStyles from "../styles/css/preview.css";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: "stylesheet", href: PreviewStyles }];
 }
 export default function Preview(props) {
   return (

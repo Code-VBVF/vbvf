@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/mitch/code/vbvf/app/routes/home.js?browser"],
+  "sourcesContent": ["export { default, links } from \"/Users/mitch/code/vbvf/app/routes/home.js\";"],
+  "mappings": ";;;;;;;;;;AAAA;",
+  "names": []
+}

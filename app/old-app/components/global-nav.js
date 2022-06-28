@@ -23,10 +23,11 @@ import { getMobileOperatingSystem } from "../util/index";
 import Button from "./button";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: "stylesheet", href: { styles } }];
 }
 
 const GlobalNav = (props) => {
+  console.log("global nav is rendering");
   const [isOpen, setIsOpen] = useState(false);
   const [modal, setModal] = useState(false);
 

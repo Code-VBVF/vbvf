@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles/css/App.css";
+import "./styles/css/App.css";
 import { Routes, Route } from "react-router-dom";
 
 import Footer from "./components/footer";
@@ -35,11 +35,8 @@ import CareMinistry from "./pages/care-ministry";
 import WhatsHappening from "./pages/whats-happening";
 
 // import OnlineMinistry from "./pages/online-ministry";
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
-}
+
 function App() {
-  console.log("app is rendering");
   return (
     <div className="page-container">
       <ScrollToTop />
