@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/stream.scss";
 
-import ConnectWidget from "../components/connect-widget";
+import ConnectWidget from "./connect-widget";
 import Button from "./button";
 
 export default function Stream(props) {
